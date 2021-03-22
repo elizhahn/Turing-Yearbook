@@ -2,10 +2,10 @@ import React from 'react';
 import Person from '../Person/Person';
 import './Cohort.css';
 
-function Cohort ({ staff }) {
-  const cohortList = staff.map(person => {
+function Cohort ({ people }) {
+  const cohortList = people.map(person => {
     return <Person 
-              id={person.id}
+              key={person.id}
               photo={person.photo}
               name={person.name}
               quote={person.quote}
@@ -14,9 +14,9 @@ function Cohort ({ staff }) {
 
   })
   return (
-    <main className="card-container">
+    <section className="card-container">
       {cohortList}
-    </main>
+    </section>
   )
 }
 
