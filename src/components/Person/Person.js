@@ -5,9 +5,9 @@ function Person({id, photo, name, quote, superlative}) {
   return (
     <article className="card" id={id}>
       <img className="card-photo" src={photo} alt= {"picture of" + name}/>
-      <p>{name}</p>
-      <p>{quote}</p>
-      <p>{superlative}</p>
+      <p className="card-name">{name}</p>
+      <p className="card-quote">{quote}</p>
+      <p className="card-superlative">{superlative}</p>
     </article>
   )
 }
