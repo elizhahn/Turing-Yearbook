@@ -1,6 +1,5 @@
 .card {
   display: flex; 
-  justify-content: center;
   flex-direction: column;  
   padding: 20px; 
   background-color: #FFF;
@@ -15,7 +14,7 @@
   height: 250px;
   object-fit: cover; 
   border-radius: 10px; 
-  align-self: center;  
+  align-self: center;
 }
 
 .card-name {
