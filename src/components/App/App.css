@@ -24,3 +24,9 @@ h1 {
   padding: 10px;
   color: limegreen;
 }
+
+.title {
+  background-color: #FFF;
+  font-size: 2em; 
+  padding: 10px 0px; 
+}
