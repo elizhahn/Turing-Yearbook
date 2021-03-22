@@ -1,13 +1,13 @@
 import React from 'react';
 import './Person.css';
 
-function Person({id, photo, name, quote, superlatative}) {
+function Person({id, photo, name, quote, superlative}) {
   return (
     <article className="card" id={id}>
-      <img src={photo} alt= {"picture of" + name}/>
+      <img className="card-photo" src={photo} alt= {"picture of" + name}/>
       <p>{name}</p>
       <p>{quote}</p>
-      <p>{superlatative}</p>
+      <p>{superlative}</p>
     </article>
   )
 }
