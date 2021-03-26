@@ -20,6 +20,10 @@ class App extends Component {
     })
   }
 
+  deleteStudent = (event) => {
+    console.log(event.target.closest("article")); 
+  }
+
   render() {
     return (
       <div className="App">
@@ -31,7 +35,7 @@ class App extends Component {
         <Cohort people={this.state.staff}/>
         <h3 className="title">STUDENTS</h3>
         <StudentForm students={this.state.students} onSubmit={studentInfo => this.addStudent(studentInfo)}/>
-        <Cohort people={this.state.students}/>
+        <Cohort people={this.state.students} deleteStudent={this.deleteStudent}/>
       </main>
       </div>
     );

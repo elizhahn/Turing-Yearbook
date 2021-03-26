@@ -34,3 +34,7 @@
   padding: 5px; 
   border-radius: 5px; 
 }
+
+.close-icon {
+  display: inline;
+}
